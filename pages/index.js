@@ -1,8 +1,10 @@
-import React from 'react';
-import Head from 'next/head';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import React from "react";
+import Head from "next/head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
@@ -14,10 +16,13 @@ export default function Home() {
       </Head>
       <main className="text-center text-white">
         <p className="text-xl">Elliot Braem</p>
-        <FontAwesomeIcon className="mx-1" icon={faEnvelope} />
-        <FontAwesomeIcon className="mx-1" icon={faGithub} />
-        <FontAwesomeIcon className="mx-1" icon={faInstagram} />
-        <FontAwesomeIcon className="mx-1" icon={faTwitter} />
+        <p className="text-md">elliot@ejlbraem.com</p>
+        <a href="https://github.com/elliotBraem">
+          <FontAwesomeIcon className="mx-1" icon={faGithub} />
+        </a>
+        <a href="https://www.instagram.com/efizzy.busy/">
+          <FontAwesomeIcon className="mx-1" icon={faInstagram} />
+        </a>
       </main>
       <footer></footer>
     </div>
